@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'wsl-agent' }  // ensures this job runs on your WSL node
     stages {
         stage('Checkout') {
             steps {
