@@ -53,7 +53,7 @@ resource "aws_instance" "jenkins_ec2" {
               yum install -y httpd
               systemctl start httpd
               systemctl enable httpd
-              echo "<h1>Deployed via Terraform + Jenkins 🚀</h1>" > /var/www/html/index.html
+              echo "<h1>Deployed via Terraform + Jenkins to create ec2  🚀</h1>" > /var/www/html/index.html
               EOF
 
   tags = {
